@@ -1,0 +1,72 @@
+.Asset-14x {
+  width: 402px;
+  height: 346px;
+  object-fit: contain;
+  margin-top: 10.5%;
+}
+
+   	.form-control {
+   		  width: 372px;
+		  height: 35px;
+		  object-fit: contain;
+		  border-radius: 10px;
+		  background-color: #e6e6e6;
+		  border-style: none;
+   	}
+
+   	.labelaja {
+
+	  width: 140px;
+	  height: 11px;
+	  object-fit: contain;
+	  font-family: Montserrat;
+	  font-size: 11px;
+	  font-weight: 600;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: normal;
+	  color: #424242;
+
+   	}
+   	.batas{
+   		margin-top: -10px;
+	  width: 6px;
+	  height: 20px;
+	  object-fit: contain;
+	  border-radius: 22px;
+	  background-color: #6a609c;
+   	}
+.loginlabel{
+	  width: 83px;
+	  height: 34px;
+	  object-fit: contain;
+	  font-size: 28px;
+	  font-weight: bold;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: normal;
+	  color: #bbbbbb;
+
+}
+.loginlabel:hover{
+	text-decoration: none;
+	color: #bbbbbb;
+}
+.daftarlabel{
+	  width: 93px;
+	  height: 34px;
+	  object-fit: contain;
+	  font-size: 28px;
+	  font-weight: bold;
+	  font-style: normal;
+	  font-stretch: normal;
+	  line-height: normal;
+	  letter-spacing: normal;
+	  color: #424242;
+}
+.daftarlabel:hover{
+	text-decoration: none;
+	color: #424242;
+}

@@ -1,0 +1,127 @@
+
+<html lang="en">
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: Montserrat">
+	<div class="container">
+		
+  	<nav class="navbar navbar-expand-lg navbar-light ">
+	  <a class="navbar-brand" href="#">YukNgekost!</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav-sm ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Cari Kost</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Tentang</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Login</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Daftar</a>
+	      </li>
+	      
+	    </ul>
+	  </div>
+	</nav>
+	<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+    <img  class="Asset-14x" src="../../image/gambar.png">
+    </div>
+    <div class="col-sm-6">
+     <form class="user" method="POST" action="<?php echo base_url('Regis_c')?>">
+		  
+
+		   <style type="text/css">
+		   	
+
+
+
+		   </style>
+
+
+		   <div style="margin-top: 10.5%;margin-bottom: 2.3%">
+		   	<a class="loginlabel" href="" style="padding-right: 1.7%">Login</a>
+		   	<img class="batas" src="../../image/batas.png">
+		   	<a class="daftarlabel" href="" style="padding-left: 1.7%">Daftar</a>
+		   </div>
+		  <div class="form-group">
+		    <label class = "labelaja-sm" for="exampleFormControlInput1">Nama Lengkap</label>
+		    <input type="text" class="form-control" id="name" name="name" placeholder="Masukan Nama Lengkap Kamu">
+		  </div>
+		  <div class="form-group">
+		    <label class = "labelaja" for="exampleFormControlInput1">Email</label>
+		    <input type="email" class="form-control" id="email" name="email" placeholder="Masukan Email Kamu">
+		  </div>
+		   <div class="form-group">
+		    <label class = "labelaja" for="exampleFormControlInput1">Kata Sandi</label>
+		    <input type="password" class="form-control" id="password" name="password" placeholder="Masukan Kata Sandi Kamu">
+		  </div>
+		   <div class="form-group">
+		    <label class = "labelaja" for="exampleFormControlInput1">Konfirmasi Kata Sandi</label>
+		    <input type="password" class="form-control" id="password2" name="password2" placeholder="Masukan Kembali Kata Sandi Kamu">
+		  </div>
+		    <div class="form-group">
+		    <label class = "labelaja" for="exampleFormControlInput1">No. Handphone</label>
+		    <input type="password" class="form-control" id="telp" name="telp" placeholder="Masukan No Handphone Kamu">
+		  </div>
+		  <div class="form-group">
+		    <label class = "labelaja" for="exampleFormControlSelect1">Tipe Akun</label>
+		    <select class="form-control" id="tipe" name="tipe">
+		      <option>Pencari Kos</option>
+		      <option>Pemilik Kos</option>
+		    </select>
+		  </div>
+		  <div class="form-group">
+		    <label class = "labelaja" for="exampleFormControlTextarea1">Alamat</label>
+		    <textarea class="form-control" id="alamat" name="alamat" rows="3"></textarea>
+		  </div>
+		</form>
+<style type="text/css">
+	.btn {
+  width: 172px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #6a609c;
+  color: white;
+}
+</style>
+	<input class="btn" type="submit" name="" value="Daftar">
+    </div>
+  </div>
+</div>
+	
+  	</div>
+  	
+  	
+</body>
+<footer>
+  		<div class="foot">
+  		<style type="text/css">
+  			.foot{
+  				  margin-top: 8.5%;
+				  height: 384px;
+				  object-fit: contain;
+				  background-color: #6a609c;
+  			}
+  		</style>
+  		
+  	</div>
+  	</footer>
+</html>
