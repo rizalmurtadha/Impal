@@ -86,33 +86,36 @@
 }
 </style>
   <div class="container">
-    
     <nav class="navbar navbar-expand-lg navbar-light ">
-    <a class="navbar-brand" href="#">YukNgekost!</a>
+    <a class="navbar-brand" href="#"><img src="<?php echo base_url()?>/image/home-address.png">YukNgekost!</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+        <li class="nav-item ">
+          <a class="nav-link" href="<?php echo base_url('Beranda_c')?>">Beranda <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Cari Kost</a>
+          <a class="nav-link" href="<?php echo base_url('Carikos_c')?>">Cari Kost</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tentang</a>
+          <a class="nav-link" href="<?php echo base_url('Login_c')?>">Tentang</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo base_url('Login_c')?>">Login</a>
+          <?php if(isset($_SESSION['username'])) : ?>
+            <a class="nav-link" href="<?php echo base_url('Login_c/logout')?>">Logout</a>
+          <?php else : ?>
+            <a class="nav-link active" href="<?php echo base_url('Login_c')?>">Login</a>
+          <?php endif; ?>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo base_url('Regis_c')?>">Daftar</a>
         </li>
-        
       </ul>
     </div>
-  </nav>
+    </nav>
+  
   <div class="container">
   <div class="row">
     <div class="col-sm-6">

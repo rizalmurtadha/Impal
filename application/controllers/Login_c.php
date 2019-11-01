@@ -36,12 +36,12 @@ class Login_c extends CI_Controller {
 				if($password == $user['password']){
 					$data =[
 						'username' => $user['username'],
-						// 'role' => $user['role'],
+						'role' => 1 // Pencari
 						// 'paket' => $user['paket'],
 					];
 
 					$this->session->set_userdata($data);
-					redirect('Welcome');
+					redirect('Beranda_c');
 
 				}
 				else{
@@ -61,12 +61,12 @@ class Login_c extends CI_Controller {
 					if($password == $user['password']){
 						$data =[
 							'username' => $user['username'],
-							// 'role' => $user['role'],
+							'role' => 2 //Pemilik kos
 							// 'paket' => $user['paket'],
 						];
 
 						$this->session->set_userdata($data);
-						redirect('Welcome');
+						redirect('Beranda_c');
 					}
 					else{
 						$this->session->set_flashdata('message','<div class="alert alert-danger" role="alert">password wrong!</div>');
@@ -85,9 +85,12 @@ class Login_c extends CI_Controller {
 			}
 		
 		}
-
-
-}
-
+	}
+	public function logout(){
+		$this->session->unset_userdata('username');
+		$this->session->unset_userdata('role');
+		//$this->load->view('Home_V');
+		redirect('Beranda_c');
+	}
 }
 
